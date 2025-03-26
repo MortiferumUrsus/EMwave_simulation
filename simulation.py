@@ -68,7 +68,7 @@ class SimulationEngine:
             line_h.set_data_3d([], [], [])
         return self.lines_e + self.lines_h
 
-    def update(self):
+    def update(self, frames):
         """
         Вызывается для каждого кадра анимации.
         Увеличиваем время, пересчитываем E и H для каждой волны, перерисовываем линии.
